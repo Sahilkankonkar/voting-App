@@ -84,7 +84,7 @@ router.delete('/:candidateID', jwtAuthMiddleware, async (req, res)=>{
     }
 })
 
-// let's start voting
+// start voting
 router.get('/vote/:candidateID', jwtAuthMiddleware, async (req, res)=>{
     // no admin can vote
     // user can only vote once
